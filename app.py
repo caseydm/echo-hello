@@ -9,7 +9,7 @@ app = Flask('__name__')
 ask = Ask(app, '/')
 
 
-@ask.launch()
+@ask.launch
 def launch():
     speech_text = 'Welcome to my alexa skill set'
     return question(speech_text). \
