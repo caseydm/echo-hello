@@ -25,7 +25,7 @@ def hello_world():
 
 @ask.intent('AMAZON.HelpIntent')
 def help():
-    speech_text = 'You can say hellow to me'
+    speech_text = 'You can say hello to me'
     return question(speech_text). \
         reprompt(speech_text). \
         simple_card('HelloWorld', speech_text)
